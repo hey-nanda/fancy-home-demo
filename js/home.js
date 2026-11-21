@@ -9,6 +9,12 @@
 
     const featuredIds = [1, 2, 3, 4, 5, 6];
 
+    function imageUrl(src) {
+        if (!src) return '';
+        if (/^(https?:|data:)/i.test(src)) return src;
+        return './' + String(src).replace(/^(\.{1,2}\/|\/)+/, '');
+    }
+
     function showMessage(message) {
         productGrid.replaceChildren();
         const item = document.createElement('li');
@@ -31,10 +37,10 @@
         featuredProducts.forEach(product => {
             const item = document.createElement('li');
             const link = document.createElement('a');
-            link.href = `../product-details.html?id=${encodeURIComponent(product.id)}`;
+            link.href = `./product-details.html?id=${encodeURIComponent(product.id)}`;
 
             const image = document.createElement('img');
-            image.src = product.image;
+            image.src = imageUrl(product.image);
             image.alt = product.name;
             image.loading = 'lazy';
 

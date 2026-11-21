@@ -40,14 +40,15 @@
         `./product-details.html?id=${encodeURIComponent(id)}`;
 
     function imageUrl(src) {
-        if (!src) return "";
+    if (!src) return "";
 
-        if (src.startsWith("./src/")) {
-            return "." + src;
-        }
+    // Links externos e imagens embutidas não mudam.
+    if (/^(https?:|data:)/i.test(src)) return src;
 
-        return src;
-    }
+    // Remove "../", "./" e "/" do início: todas as páginas ficam
+    // na raiz do projeto, então o caminho correto é sempre "./src/...".
+    return "./" + String(src).replace(/^(\.{1,2}\/|\/)+/, "");
+}
 
     // ---------- ID do produto ----------
 

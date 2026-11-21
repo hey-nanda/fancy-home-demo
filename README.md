@@ -20,6 +20,14 @@ Esta versão é uma demonstração navegável da loja, sem necessidade de servid
 
 Abra o projeto com um servidor estático, como a extensão **Live Server** do VS Code, e acesse `index.html`.
 
+## Publicar no GitHub Pages
+
+1. Envie os arquivos para a branch `main` do repositório.
+2. Em **Settings → Pages**, escolha **Deploy from a branch**, branch `main` e pasta `/ (root)`.
+3. Acesse `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`.
+
+Todos os caminhos (imagens, CSS, JS, JSON e links) são **relativos**, então o site funciona tanto na raiz quanto em subpastas, como é o caso do GitHub Pages. O GitHub Pages diferencia maiúsculas de minúsculas: mantenha os nomes dos arquivos exatamente iguais aos usados no código.
+
 ## Versão completa
 
 A versão com **PHP, MySQL, autenticação, pedidos e painel administrativo** está disponível no repositório do projeto completo:

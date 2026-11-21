@@ -55,14 +55,15 @@
     // e também na Vercel.
 
     function imageUrl(src) {
-        if (!src) return "";
+    if (!src) return "";
 
-        if (src.startsWith("./src/")) {
-            return "." + src;
-        }
+    // Links externos e imagens embutidas não mudam.
+    if (/^(https?:|data:)/i.test(src)) return src;
 
-        return src;
-    }
+    // Remove "../", "./" e "/" do início: todas as páginas ficam
+    // na raiz do projeto, então o caminho correto é sempre "./src/...".
+    return "./" + String(src).replace(/^(\.{1,2}\/|\/)+/, "");
+}
 
     // =========================================
     // LOCAL STORAGE
@@ -207,7 +208,7 @@
             bagList.innerHTML = `
                 <li class="sacola-vazia">
                     <p>Sua sacola está vazia.</p>
-                    <a href="/shop.html">
+                    <a href="./shop.html">
                         Explorar produtos
                     </a>
                 </li>
