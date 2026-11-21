@@ -37,12 +37,12 @@
     // Funciona tanto em / no Live Server quanto
     // na raiz do site publicado na Vercel.
     const pageUrl = id =>
-        `/product-details.html?id=${encodeURIComponent(id)}`;
+        `./product-details.html?id=${encodeURIComponent(id)}`;
 
     function imageUrl(src) {
         if (!src) return "";
 
-        if (src.startsWith("/src/")) {
+        if (src.startsWith("./src/")) {
             return "." + src;
         }
 

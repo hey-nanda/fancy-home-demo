@@ -51,7 +51,7 @@ input {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: #e9e2cf url("/src/imgs/background-login.jpg") center / cover no-repeat;
+    background: #e9e2cf url("./src/imgs/background-login.jpg") center / cover no-repeat;
 }
 
 .fundo::before {
@@ -123,7 +123,7 @@ input {
     content: "";
     position: absolute;
     inset: 12% 8% 12% 10%;
-    background: url("/src/imgs/LOGO.svg") center / contain no-repeat;
+    background: url("./src/imgs/LOGO.svg") center / contain no-repeat;
     opacity: 0.09;
     pointer-events: none;
 }

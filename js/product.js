@@ -5,7 +5,7 @@
 
 window.PRODUCTS = [];
 
-window.productsReady = fetch('/api/products.json')
+window.productsReady = fetch('./api/products.json')
     .then(response => {
         if (!response.ok) {
             throw new Error(`Erro HTTP: ${response.status}`);

@@ -66,7 +66,7 @@
     function imageUrl(src) {
         if (!src) return "";
 
-        if (src.startsWith("/src/")) {
+        if (src.startsWith("./src/")) {
             return "." + src;
         }
 
@@ -88,7 +88,7 @@
             const link = document.createElement("a");
 
             link.href =
-                `/product-details.html?id=${encodeURIComponent(product.id)}`;
+                `../product-details.html?id=${encodeURIComponent(product.id)}`;
 
             // Imagem
 
@@ -283,7 +283,7 @@
         // Remove os parâmetros de pesquisa da URL.
 
         const cleanUrl = new URL(
-            "/shop.html",
+            "./shop.html",
             window.location.href
         );
 

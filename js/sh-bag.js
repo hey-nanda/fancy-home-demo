@@ -57,7 +57,7 @@
     function imageUrl(src) {
         if (!src) return "";
 
-        if (src.startsWith("/src/")) {
+        if (src.startsWith("./src/")) {
             return "." + src;
         }
 

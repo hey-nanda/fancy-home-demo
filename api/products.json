@@ -4,7 +4,7 @@
         "name": "Estante de Canto Pequena",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 425.2,
-        "image": "/src/imgs/estante-pequena.png",
+        "image": "../src/imgs/estante-pequena.png",
         "category": "organization",
         "tags": [
             "estante",
@@ -13,9 +13,9 @@
             "organização"
         ],
         "images": [
-            "/src/imgs/estante-pequena1.png",
-            "/src/imgs/estante-pequena2.png",
-            "/src/imgs/estante-pequena3.png"
+            "../src/imgs/estante-pequena1.png",
+            "../src/imgs/estante-pequena2.png",
+            "../src/imgs/estante-pequena3.png"
         ]
     },
     {
@@ -23,7 +23,7 @@
         "name": "Vaso Cogumelo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 49.99,
-        "image": "/src/imgs/vaso-cogumelo.png",
+        "image": "../src/imgs/vaso-cogumelo.png",
         "category": "decoration",
         "tags": [
             "vaso",
@@ -32,9 +32,9 @@
             "decoração"
         ],
         "images": [
-            "/src/imgs/vaso-cogumelo1.png",
-            "/src/imgs/vaso-cogumelo2.png",
-            "/src/imgs/vaso-cogumelo3.png"
+            "../src/imgs/vaso-cogumelo1.png",
+            "../src/imgs/vaso-cogumelo2.png",
+            "../src/imgs/vaso-cogumelo3.png"
         ]
     },
     {
@@ -42,7 +42,7 @@
         "name": "Bowl Azul Pastel com Flores",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 49.9,
-        "image": "/src/imgs/bowl-azul-pastel-com-flores.png",
+        "image": "../src/imgs/bowl-azul-pastel-com-flores.png",
         "category": "kitchen",
         "tags": [
             "bowl",
@@ -51,10 +51,10 @@
             "cerâmica"
         ],
         "images": [
-            "/src/imgs/bowl-azul-pastel-com-flores.png",
-            "/src/imgs/bowl-3.png",
-            "/src/imgs/bowl-2.png",
-            "/src/imgs/bowl-1.png"
+            "../src/imgs/bowl-azul-pastel-com-flores.png",
+            "../src/imgs/bowl-3.png",
+            "../src/imgs/bowl-2.png",
+            "../src/imgs/bowl-1.png"
         ]
     },
     {
@@ -62,7 +62,7 @@
         "name": "Mesa Modular 3ノ3",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 572.45,
-        "image": "/src/imgs/mesa-modular.png",
+        "image": "../src/imgs/mesa-modular.png",
         "category": "furniture",
         "tags": [
             "mesa",
@@ -71,10 +71,10 @@
             "sala"
         ],
         "images": [
-            "/src/imgs/mesa-modular.png",
-            "/src/imgs/mesa-modular1.png",
-            "/src/imgs/mesa-modular2.png",
-            "/src/imgs/mesa-modular3.png"
+            "../src/imgs/mesa-modular.png",
+            "../src/imgs/mesa-modular1.png",
+            "../src/imgs/mesa-modular2.png",
+            "../src/imgs/mesa-modular3.png"
         ]
     },
     {
@@ -82,7 +82,7 @@
         "name": "Conjunto de Vasos",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 99.99,
-        "image": "/src/imgs/conjunto-de-vasos.png",
+        "image": "../src/imgs/conjunto-de-vasos.png",
         "category": "decoration",
         "tags": [
             "vaso",
@@ -91,10 +91,10 @@
             "cerâmica"
         ],
         "images": [
-            "/src/imgs/conjunto-de-vasos.png",
-            "/src/imgs/conjunto-de-vasos1.png",
-            "/src/imgs/conjunto-de-vasos2.png",
-            "/src/imgs/conjunto-de-vasos3.png"
+            "../src/imgs/conjunto-de-vasos.png",
+            "../src/imgs/conjunto-de-vasos1.png",
+            "../src/imgs/conjunto-de-vasos2.png",
+            "../src/imgs/conjunto-de-vasos3.png"
         ]
     },
     {
@@ -102,7 +102,7 @@
         "name": "Mesa Pera Aconchegante",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 159.9,
-        "image": "/src/imgs/mesa-pera-aconchegante.png",
+        "image": "../src/imgs/mesa-pera-aconchegante.png",
         "category": "furniture",
         "tags": [
             "mesa",
@@ -111,10 +111,10 @@
             "sala"
         ],
         "images": [
-            "/src/imgs/mesa-pera-aconchegante.png",
-            "/src/imgs/mesa-pera-aconchegante1.png",
-            "/src/imgs/mesa-pera-aconchegante2.png",
-            "/src/imgs/mesa-pera-aconchegante3.png"
+            "../src/imgs/mesa-pera-aconchegante.png",
+            "../src/imgs/mesa-pera-aconchegante1.png",
+            "../src/imgs/mesa-pera-aconchegante2.png",
+            "../src/imgs/mesa-pera-aconchegante3.png"
         ]
     },
     {
@@ -122,7 +122,7 @@
         "name": "Mesa maçã",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 139.9,
-        "image": "/src/imgs/mesa-maca.png",
+        "image": "../src/imgs/mesa-maca.png",
         "category": "furniture",
         "tags": [
             "mesa",
@@ -131,10 +131,10 @@
             "sala"
         ],
         "images": [
-            "/src/imgs/mesa-maca.png",
-            "/src/imgs/mesa-maca1.png",
-            "/src/imgs/mesa-maca2.png",
-            "/src/imgs/mesa-maca3.png"
+            "../src/imgs/mesa-maca.png",
+            "../src/imgs/mesa-maca1.png",
+            "../src/imgs/mesa-maca2.png",
+            "../src/imgs/mesa-maca3.png"
         ]
     },
     {
@@ -142,7 +142,7 @@
         "name": "Mesa planta",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 259.98,
-        "image": "/src/imgs/mesa-planta.png",
+        "image": "../src/imgs/mesa-planta.png",
         "category": "furniture",
         "tags": [
             "mesa",
@@ -151,10 +151,10 @@
             "sala"
         ],
         "images": [
-            "/src/imgs/mesa-planta.png",
-            "/src/imgs/mesa-planta1.png",
-            "/src/imgs/mesa-planta2.png",
-            "/src/imgs/mesa-planta3.png"
+            "../src/imgs/mesa-planta.png",
+            "../src/imgs/mesa-planta1.png",
+            "../src/imgs/mesa-planta2.png",
+            "../src/imgs/mesa-planta3.png"
         ]
     },
     {
@@ -162,7 +162,7 @@
         "name": "Bowl de frutas",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 62.9,
-        "image": "/src/imgs/bowl-frutas.png",
+        "image": "../src/imgs/bowl-frutas.png",
         "category": "kitchen",
         "tags": [
             "bowl",
@@ -171,10 +171,10 @@
             "cerâmica"
         ],
         "images": [
-            "/src/imgs/bowl-frutas.png",
-            "/src/imgs/bowl-frutas1.jpg",
-            "/src/imgs/bowl-frutas2.jpg",
-            "/src/imgs/bowl-frutas3.jpg"
+            "../src/imgs/bowl-frutas.png",
+            "../src/imgs/bowl-frutas1.jpg",
+            "../src/imgs/bowl-frutas2.jpg",
+            "../src/imgs/bowl-frutas3.jpg"
         ]
     },
     {
@@ -182,7 +182,7 @@
         "name": "Kit 4 Bowls",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 58.9,
-        "image": "/src/imgs/kitbowl.png",
+        "image": "../src/imgs/kitbowl.png",
         "category": "kitchen",
         "tags": [
             "bowl",
@@ -191,10 +191,10 @@
             "cerâmica"
         ],
         "images": [
-            "/src/imgs/kitbowl.png",
-            "/src/imgs/kitbowl-1.png",
-            "/src/imgs/kitbowl-2.png",
-            "/src/imgs/kitbowl-3.png"
+            "../src/imgs/kitbowl.png",
+            "../src/imgs/kitbowl-1.png",
+            "../src/imgs/kitbowl-2.png",
+            "../src/imgs/kitbowl-3.png"
         ]
     },
     {
@@ -202,7 +202,7 @@
         "name": "Estante de Ferro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 155,
-        "image": "/src/imgs/estante-ferro.png",
+        "image": "../src/imgs/estante-ferro.png",
         "category": "furniture",
         "tags": [
             "estante",
@@ -211,10 +211,10 @@
             "sala"
         ],
         "images": [
-            "/src/imgs/estante-ferro.png",
-            "/src/imgs/estante-ferro1.png",
-            "/src/imgs/estante-ferro2.png",
-            "/src/imgs/estante-ferro3.png"
+            "../src/imgs/estante-ferro.png",
+            "../src/imgs/estante-ferro1.png",
+            "../src/imgs/estante-ferro2.png",
+            "../src/imgs/estante-ferro3.png"
         ]
     },
     {
@@ -222,7 +222,7 @@
         "name": "Prateleira em onda",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 68,
-        "image": "/src/imgs/prateleira.png",
+        "image": "../src/imgs/prateleira.png",
         "category": "furniture",
         "tags": [
             "estante",
@@ -232,10 +232,10 @@
             "sala"
         ],
         "images": [
-            "/src/imgs/prateleira.png",
-            "/src/imgs/prateleira1.png",
-            "/src/imgs/prateleira2.png",
-            "/src/imgs/prateleira3.png"
+            "../src/imgs/prateleira.png",
+            "../src/imgs/prateleira1.png",
+            "../src/imgs/prateleira2.png",
+            "../src/imgs/prateleira3.png"
         ]
     },
     {
@@ -243,7 +243,7 @@
         "name": "Kit 3 vasos - Tempo Limitado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 68,
-        "image": "/src/imgs/t-l-kit2.png",
+        "image": "../src/imgs/t-l-kit2.png",
         "category": "decoration",
         "tags": [
             "vaso",
@@ -252,10 +252,10 @@
             "vidro"
         ],
         "images": [
-            "/src/imgs/t-l-kit2.png",
-            "/src/imgs/t-l-kit1.png",
-            "/src/imgs/t-l-kit.png",
-            "/src/imgs/t-l-kit3.png"
+            "../src/imgs/t-l-kit2.png",
+            "../src/imgs/t-l-kit1.png",
+            "../src/imgs/t-l-kit.png",
+            "../src/imgs/t-l-kit3.png"
         ]
     },
     {
@@ -263,7 +263,7 @@
         "name": "Vaso caixa de suco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
         "price": 68,
-        "image": "/src/imgs/vaso-caixa-de-suco.png",
+        "image": "../src/imgs/vaso-caixa-de-suco.png",
         "category": "decoration",
         "tags": [
             "vaso",
@@ -272,10 +272,10 @@
             "cerâmica"
         ],
         "images": [
-            "/src/imgs/vaso-caixa-de-suco.png",
-            "/src/imgs/vaso-caixa-de-suco1.png",
-            "/src/imgs/vaso-caixa-de-suco2.png",
-            "/src/imgs/vaso-caixa-de-suco3.png"
+            "../src/imgs/vaso-caixa-de-suco.png",
+            "../src/imgs/vaso-caixa-de-suco1.png",
+            "../src/imgs/vaso-caixa-de-suco2.png",
+            "../src/imgs/vaso-caixa-de-suco3.png"
         ]
     }
 ]
