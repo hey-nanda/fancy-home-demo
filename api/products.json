@@ -1,0 +1,281 @@
+[
+    {
+        "id": 1,
+        "name": "Estante de Canto Pequena",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 425.2,
+        "image": "/demo/src/imgs/estante-pequena.png",
+        "category": "organization",
+        "tags": [
+            "estante",
+            "madeira",
+            "canto",
+            "organização"
+        ],
+        "images": [
+            "/demo/src/imgs/estante-pequena1.png",
+            "/demo/src/imgs/estante-pequena2.png",
+            "/demo/src/imgs/estante-pequena3.png"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Vaso Cogumelo",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 49.99,
+        "image": "/demo/src/imgs/vaso-cogumelo.png",
+        "category": "decoration",
+        "tags": [
+            "vaso",
+            "cogumelo",
+            "cerâmica",
+            "decoração"
+        ],
+        "images": [
+            "/demo/src/imgs/vaso-cogumelo1.png",
+            "/demo/src/imgs/vaso-cogumelo2.png",
+            "/demo/src/imgs/vaso-cogumelo3.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Bowl Azul Pastel com Flores",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 49.9,
+        "image": "/demo/src/imgs/bowl-azul-pastel-com-flores.png",
+        "category": "kitchen",
+        "tags": [
+            "bowl",
+            "cozinha",
+            "flores",
+            "cerâmica"
+        ],
+        "images": [
+            "/demo/src/imgs/bowl-azul-pastel-com-flores.png",
+            "/demo/src/imgs/bowl-3.png",
+            "/demo/src/imgs/bowl-2.png",
+            "/demo/src/imgs/bowl-1.png"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Mesa Modular 3ノ3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 572.45,
+        "image": "/demo/src/imgs/mesa-modular.png",
+        "category": "furniture",
+        "tags": [
+            "mesa",
+            "modular",
+            "móveis",
+            "sala"
+        ],
+        "images": [
+            "/demo/src/imgs/mesa-modular.png",
+            "/demo/src/imgs/mesa-modular1.png",
+            "/demo/src/imgs/mesa-modular2.png",
+            "/demo/src/imgs/mesa-modular3.png"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Conjunto de Vasos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 99.99,
+        "image": "/demo/src/imgs/conjunto-de-vasos.png",
+        "category": "decoration",
+        "tags": [
+            "vaso",
+            "conjunto",
+            "decoração",
+            "cerâmica"
+        ],
+        "images": [
+            "/demo/src/imgs/conjunto-de-vasos.png",
+            "/demo/src/imgs/conjunto-de-vasos1.png",
+            "/demo/src/imgs/conjunto-de-vasos2.png",
+            "/demo/src/imgs/conjunto-de-vasos3.png"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Mesa Pera Aconchegante",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 159.9,
+        "image": "/demo/src/imgs/mesa-pera-aconchegante.png",
+        "category": "furniture",
+        "tags": [
+            "mesa",
+            "pera",
+            "madeira",
+            "sala"
+        ],
+        "images": [
+            "/demo/src/imgs/mesa-pera-aconchegante.png",
+            "/demo/src/imgs/mesa-pera-aconchegante1.png",
+            "/demo/src/imgs/mesa-pera-aconchegante2.png",
+            "/demo/src/imgs/mesa-pera-aconchegante3.png"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Mesa maçã",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 139.9,
+        "image": "/demo/src/imgs/mesa-maca.png",
+        "category": "furniture",
+        "tags": [
+            "mesa",
+            "maçã",
+            "madeira",
+            "sala"
+        ],
+        "images": [
+            "/demo/src/imgs/mesa-maca.png",
+            "/demo/src/imgs/mesa-maca1.png",
+            "/demo/src/imgs/mesa-maca2.png",
+            "/demo/src/imgs/mesa-maca3.png"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Mesa planta",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 259.98,
+        "image": "/demo/src/imgs/mesa-planta.png",
+        "category": "furniture",
+        "tags": [
+            "mesa",
+            "pera",
+            "madeira",
+            "sala"
+        ],
+        "images": [
+            "/demo/src/imgs/mesa-planta.png",
+            "/demo/src/imgs/mesa-planta1.png",
+            "/demo/src/imgs/mesa-planta2.png",
+            "/demo/src/imgs/mesa-planta3.png"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Bowl de frutas",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 62.9,
+        "image": "/demo/src/imgs/bowl-frutas.png",
+        "category": "kitchen",
+        "tags": [
+            "bowl",
+            "cozinha",
+            "frutas",
+            "cerâmica"
+        ],
+        "images": [
+            "/demo/src/imgs/bowl-frutas.png",
+            "/demo/src/imgs/bowl-frutas1.jpg",
+            "/demo/src/imgs/bowl-frutas2.jpg",
+            "/demo/src/imgs/bowl-frutas3.jpg"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Kit 4 Bowls",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 58.9,
+        "image": "/demo/src/imgs/kitbowl.png",
+        "category": "kitchen",
+        "tags": [
+            "bowl",
+            "cozinha",
+            "frutas",
+            "cerâmica"
+        ],
+        "images": [
+            "/demo/src/imgs/kitbowl.png",
+            "/demo/src/imgs/kitbowl-1.png",
+            "/demo/src/imgs/kitbowl-2.png",
+            "/demo/src/imgs/kitbowl-3.png"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Estante de Ferro",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 155,
+        "image": "/demo/src/imgs/estante-ferro.png",
+        "category": "furniture",
+        "tags": [
+            "estante",
+            "moveis",
+            "ferro",
+            "sala"
+        ],
+        "images": [
+            "/demo/src/imgs/estante-ferro.png",
+            "/demo/src/imgs/estante-ferro1.png",
+            "/demo/src/imgs/estante-ferro2.png",
+            "/demo/src/imgs/estante-ferro3.png"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Prateleira em onda",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 68,
+        "image": "/demo/src/imgs/prateleira.png",
+        "category": "furniture",
+        "tags": [
+            "estante",
+            "prateleira",
+            "moveis",
+            "madeira",
+            "sala"
+        ],
+        "images": [
+            "/demo/src/imgs/prateleira.png",
+            "/demo/src/imgs/prateleira1.png",
+            "/demo/src/imgs/prateleira2.png",
+            "/demo/src/imgs/prateleira3.png"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Kit 3 vasos - Tempo Limitado",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 68,
+        "image": "/demo/src/imgs/t-l-kit2.png",
+        "category": "decoration",
+        "tags": [
+            "vaso",
+            "conjunto",
+            "decoração",
+            "vidro"
+        ],
+        "images": [
+            "/demo/src/imgs/t-l-kit2.png",
+            "/demo/src/imgs/t-l-kit1.png",
+            "/demo/src/imgs/t-l-kit.png",
+            "/demo/src/imgs/t-l-kit3.png"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Vaso caixa de suco",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non augue vel eros sodales malesuada efficitur vel lacus. Phasellus ut scelerisque ante.",
+        "price": 68,
+        "image": "/demo/src/imgs/vaso-caixa-de-suco.png",
+        "category": "decoration",
+        "tags": [
+            "vaso",
+            "conjunto",
+            "decoração",
+            "cerâmica"
+        ],
+        "images": [
+            "/demo/src/imgs/vaso-caixa-de-suco.png",
+            "/demo/src/imgs/vaso-caixa-de-suco1.png",
+            "/demo/src/imgs/vaso-caixa-de-suco2.png",
+            "/demo/src/imgs/vaso-caixa-de-suco3.png"
+        ]
+    }
+]

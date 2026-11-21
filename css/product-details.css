@@ -1,0 +1,391 @@
+
+/* ========================================
+   PRODUCT DETAILS - FANCY HOME
+======================================== */
+
+/* ---------- Página do produto ---------- */
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+
+  background: #928C74;
+  color: var(--branco);
+
+  padding: 3rem 6%;
+  min-height: 480px;
+}
+
+/* ---------- Galeria ---------- */
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.product-thumbnails {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.product-thumbnail {
+  width: 62px;
+  height: 62px;
+
+  padding: 0;
+  border: 1px solid transparent;
+  background: var(--bege);
+
+  cursor: pointer;
+  opacity: 0.7;
+
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.product-thumbnail:hover {
+  opacity: 1;
+}
+
+.product-thumbnail.active {
+  border-color: var(--branco);
+  opacity: 1;
+}
+
+.product-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-thumbnail:focus-visible {
+  outline: 2px solid var(--branco);
+  outline-offset: 3px;
+}
+
+.product-main-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  background: var(--bege);
+  overflow: hidden;
+}
+
+.product-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: opacity 0.2s;
+}
+
+/* ---------- Informações ---------- */
+
+.product-info {
+  width: min(100%, 480px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product-info__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product-info h1 {
+  margin: 0;
+
+  font-family: fredoka;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 300;
+  line-height: 1.2;
+}
+.wishlist-toggle.is-favorite svg path {
+    fill: currentColor;
+}
+
+.wishlist-toggle {
+    cursor: pointer;
+}
+#favoriteButton{
+  border: none;
+  background: none;
+}
+#favoriteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  border: none;
+  background: transparent;
+  color: var(--branco);
+
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#productFeedback{
+  font-family: fredoka;
+}
+
+#favoriteButton:hover {
+  transform: scale(1.12);
+}
+
+#favoriteButton[aria-pressed="true"] svg path {
+  fill: var(--branco);
+}
+
+.product-favorite:focus-visible {
+  outline: 2px solid var(--branco);
+  outline-offset: 3px;
+}
+
+.product-description {
+  margin: 2rem 0 0;
+
+  font-family: fredoka;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.9;
+}
+
+.product-price {
+  margin: 2rem 0 0;
+
+  font-family: fredoka;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.product-cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+
+  margin-top: 1.3rem;
+  padding: 0.8rem 2rem;
+
+  border: none;
+  border-radius: 999px;
+
+  background: var(--branco);
+  color: var(--marrom);
+
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.product-cart:hover {
+  background: var(--bege);
+}
+
+.product-cart:active {
+  transform: scale(0.98);
+}
+
+.product-cart:focus-visible {
+  outline: 2px solid var(--branco);
+  outline-offset: 3px;
+}
+
+.product-feedback {
+  min-height: 1.3rem;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+}
+
+/* ---------- Recomendados ---------- */
+
+.recommended-section {
+  padding: 0 0 3rem;
+}
+
+.recommended-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.5rem, 7vw, 6rem);
+
+  padding: 1.3rem 1rem;
+  background: var(--bege);
+}
+
+.recommended-title h2 {
+  margin: 0;
+font-family: fredoka;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.recommended-title i {
+  color: var(--vinho);
+  font-size: 1.3rem;
+  font-style: normal;
+}
+
+.recommended-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+
+  max-width: 1367px;
+  margin: 0 auto;
+  padding: 2.5rem 4%;
+
+  list-style: none;
+}
+
+.recommended-card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-family: fredoka;
+}
+
+.recommended-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: var(--bege);
+}
+
+.recommended-card h3 {
+  margin: 0.8rem 0 0.3rem;
+  font-size: 0.98rem;
+  font-weight: 400;
+}
+
+.recommended-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.recommended-card a:hover h3 {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 1024px) {
+
+  .product-detail {
+    gap: 2rem;
+    padding: 2.5rem 4%;
+  }
+
+  .product-thumbnail {
+    width: 52px;
+    height: 52px;
+  }
+
+  .recommended-grid {
+    gap: 1.2rem;
+  }
+}
+
+/* ---------- Celular ---------- */
+
+@media (max-width: 720px) {
+
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    padding: 2rem 1.25rem;
+  }
+
+  .product-gallery {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    max-width: 420px;
+  }
+
+  .product-main-image {
+    order: 1;
+  }
+
+  .product-thumbnails {
+    order: 2;
+
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  .product-thumbnail {
+    width: 58px;
+    height: 58px;
+  }
+
+  .product-info {
+    max-width: 480px;
+  }
+
+  .product-info h1 {
+    font-size: 2rem;
+  }
+
+  .product-description {
+    margin-top: 1.3rem;
+    font-size: 0.95rem;
+  }
+
+  .product-price {
+    margin-top: 1.3rem;
+  }
+
+  .product-cart {
+    width: min(100%, 320px);
+  }
+
+  .recommended-title {
+    gap: 1.2rem;
+  }
+
+  .recommended-title h2 {
+    font-size: 1rem;
+  }
+
+  .recommended-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem 0.9rem;
+    padding: 1.5rem 4%;
+  }
+
+  .recommended-card h3 {
+    font-size: 0.88rem;
+  }
+
+  .recommended-card p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .product-thumbnail {
+    width: 48px;
+    height: 48px;
+  }
+
+  .product-info h1 {
+    font-size: 1.7rem;
+  }
+}

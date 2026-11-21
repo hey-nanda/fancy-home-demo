@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sacola | Fancy Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/sh-bag.css">
+
+<script src="./js/product.js" defer></script>
+<script src="./js/sh-bag.js" defer></script>
+</head>
+
+<body>
+
+    <p class="aviso">Frete grátis acima de R$200</p>
+
+  <header class="topo">
+
+    <div class="topo__barra">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+      <label for="menu-toggle" class="menu-botao" aria-hidden="true"><span></span></label>
+      <a href="./index.html" class="logo" aria-label="Fancy Home">
+        <img src="./src/imgs/logo.png" alt="Fancy Home" width="56" height="48">
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="./index.html">Home</a>
+        <details class="menu__dropdown">
+          <summary>Shop
+            <svg width="12" height="8" viewBox="0 0 12 8" aria-hidden="true">
+              <path d="M1 1.5 6 6.5 11 1.5" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </summary>
+          <div class="menu__categorias">
+            <a href="./shop.html?category=decoration">Decoração</a>
+            <span aria-disabled="true">Móveis</span>
+            <span aria-disabled="true">Cozinha</span>
+          </div>
+        </details>
+        <a href="./contato.html">Contato</a>
+        <a href="./sobre.html">Sobre</a>
+      </nav>
+      <form class="busca" role="search" action="./shop.html" method="GET">
+        <input type="search" name="q" placeholder="Buscar produtos" aria-label="Buscar produtos">
+        <button type="submit" aria-label="Buscar">
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+            <circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="1.6" />
+            <path d="m17 17 7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+          </svg>
+        </button>
+      </form>
+      <div class="acoes">
+        <a href="./wishlist.html" aria-label="Favoritos">
+          <svg width="22" height="20" viewBox="0 0 24 22" aria-hidden="true">
+            <path
+              d="M12 21 3 12C-.5 8.5 1 2 6.500 2c2.300 0 4 1.300 5.500 3C13.500 3.300 15.200 2 17.500 2 23 2 24.500 8.500 21 12z"
+              fill="currentColor" />
+          </svg>
+        </a>
+        <a href="./sh-bag.html" aria-label="Sacola">
+          <svg width="22" height="24" viewBox="0 0 22 24" aria-hidden="true">
+            <path d="M2 7h18l1 15H1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+            <path d="M7 10V6a4 4 0 0 1 8 0v4" fill="none" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+        </a>
+        <a href="./login.html" aria-label="Minha conta">
+          <svg width="22" height="24" viewBox="0 0 22 24" aria-hidden="true">
+            <circle cx="11" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6" />
+            <path d="M1.500 23c0-5 4-8 9.500-8s9.500 3 9.500 8" fill="none" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </header>
+
+    <main class="sacola">
+
+        <div class="carrinho">
+            <section class="itens" aria-labelledby="itens-titulo">
+                <h2 id="itens-titulo">Itens</h2>
+                <ul class="itens__lista">
+
+                </ul>
+            </section>
+
+            <section class="total" aria-labelledby="total-titulo">
+                <h2 id="total-titulo">Total</h2>
+                <dl class="total__linhas">
+                    <div>
+                        <dt>Itens no carrinho</dt>
+                        <dd id="subtotal">R$ 0,00</dd>
+                    </div>
+
+                    <div>
+                        <dt>Descontos de promoção</dt>
+                        <dd>R$ 0,00</dd>
+                    </div>
+
+                    <div>
+                        <dt>Taxa de entrega</dt>
+                        <dd id="frete">R$ 0,00</dd>
+                    </div>
+
+                    <div>
+                        <dt>Cupom de desconto</dt>
+                        <dd>R$ 0,00</dd>
+                    </div>
+                </dl>
+                <div id="valor_final">
+                    <p class="total__rotulo">Valor final</p>
+                    <p class="total__valor" id="total-final">R$ 0,00</p>
+                    <p class="total__rotulo total__rotulo--entrega">Previsão de entrega</p>
+                    <p class="total__datas">01/dez/2026 a 07/dez/2026</p>
+                </div>
+
+            </section>
+        </div>
+
+        <form class="checkout" id="checkout" action="#" method="post">
+
+
+            <section class="bloco" aria-labelledby="endereco-titulo">
+                <h2 id="endereco-titulo" class="bloco__titulo bloco__titulo--grande">Endereço de entrega</h2>
+
+                <div class="endereco">
+                    <label class="campo c-nome"><span class="sr-only">Nome completo</span>
+                        <input type="text" name="nome" placeholder="Nome completo" autocomplete="name" required></label>
+
+                    <label class="campo c-cep"><span class="sr-only">CEP</span>
+                        <input type="text" name="cep" placeholder="CEP" inputmode="numeric" autocomplete="postal-code"
+                            required></label>
+                    <label class="campo c-endereco"><span class="sr-only">Endereço</span>
+                        <input type="text" name="endereco" placeholder="Endereço" autocomplete="street-address"
+                            required></label>
+
+                    <label class="campo c-numero"><span class="sr-only">Número da casa</span>
+                        <input type="text" name="numero" placeholder="Nº da casa" inputmode="numeric" required></label>
+                    <label class="campo c-compl"><span class="sr-only">Complemento</span>
+                        <input type="text" name="complemento" placeholder="Complemento"></label>
+                    <label class="campo c-bairro"><span class="sr-only">Bairro</span>
+                        <input type="text" name="bairro" placeholder="Bairro" required></label>
+                    <label class="campo c-cidade"><span class="sr-only">Cidade</span>
+                        <input type="text" name="cidade" placeholder="Cidade" autocomplete="address-level2"
+                            required></label>
+
+                    <label class="campo c-email"><span class="sr-only">E-mail</span>
+                        <input type="email" name="email" placeholder="E-mail" autocomplete="email" required></label>
+                    <label class="campo c-tel"><span class="sr-only">Telefone de contato</span>
+                        <input type="tel" name="telefone" placeholder="Telefone de contato" autocomplete="tel"
+                            required></label>
+                </div>
+            </section>
+
+
+            <section class="bloco pagamento" aria-labelledby="pagamento-titulo">
+                <h2 id="pagamento-titulo" class="bloco__titulo">Pagamento</h2>
+
+                <fieldset class="metodos">
+                    <legend class="sr-only">Forma de pagamento</legend>
+                    <div class="metodo">
+                        <input type="radio" name="pagamento" id="pg-mastercard" value="mastercard">
+                        <label for="pg-mastercard"><img src="./src/imgs/Mastercard-logo.svg" alt="Mastercard"></label>
+                    </div>
+                    <div class="metodo">
+                        <input type="radio" name="pagamento" id="pg-visa" value="visa" checked>
+                        <label for="pg-visa"><img src="./src/imgs/visa-17.png" alt="Visa"></label>
+                    </div>
+                    <div class="metodo">
+                        <input type="radio" name="pagamento" id="pg-paypal" value="paypal">
+                        <label for="pg-paypal"><img src="./src/imgs/Paypal_2014_logo.png" alt="PayPal"></label>
+                    </div>
+                    <div class="metodo">
+                        <input type="radio" name="pagamento" id="pg-pix" value="pix">
+                        <label for="pg-pix"><img src="./src/imgs/pix-106.png" alt="Pix"></label>
+                    </div>
+                </fieldset>
+
+                <div class="cartao">
+                    <div class="cartao__linha">
+                        <label for="numero-cartao">Número do cartão <b aria-hidden="true">*</b></label>
+                        <input type="text" id="numero-cartao" name="numero-cartao" inputmode="numeric"
+                            autocomplete="cc-number" maxlength="19" required>
+                        <span class="bandeira" aria-hidden="true">
+                            <img class="bandeira__mastercard" src="./src/imgs/Mastercard-logo.svg" alt="">
+                            <img class="bandeira__visa" src="./src/imgs/visa-17.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="cartao__linha cartao__linha--validade">
+                        <label for="validade-mes">Data de expiração <b aria-hidden="true">*</b></label>
+                        <input type="text" id="validade-mes" name="validade-mes" class="curto" placeholder="MM"
+                            inputmode="numeric" autocomplete="cc-exp-month" maxlength="2" required>
+                        <label for="validade-ano" class="sr-only">Ano de expiração</label>
+                        <input type="text" id="validade-ano" name="validade-ano" class="medio" placeholder="AAAA"
+                            inputmode="numeric" autocomplete="cc-exp-year" maxlength="4" required>
+                        <label for="cvv" class="cvv-rotulo">CVV <b aria-hidden="true">*</b></label>
+                        <input type="text" id="cvv" name="cvv" class="curto" inputmode="numeric" autocomplete="cc-csc"
+                            maxlength="4" required>
+                    </div>
+
+                    <div class="cartao__linha">
+                        <label for="titular">Nome do titular <b aria-hidden="true">*</b></label>
+                        <input type="text" id="titular" name="titular" autocomplete="cc-name" required>
+                    </div>
+                </div>
+
+                <p class="aviso-metodo aviso-metodo--paypal">Você será redirecionado ao PayPal para concluir o
+                    pagamento.</p>
+                <p class="aviso-metodo aviso-metodo--pix">O código Pix será exibido após a confirmação da compra.</p>
+            </section>
+
+
+            <section class="bloco resumo" aria-labelledby="resumo-titulo">
+                <h2 id="resumo-titulo" class="bloco__titulo">Resumo do pedido</h2>
+
+                <div class="resumo__caixa">
+                    <h3>Itens</h3>
+                    <ul class="resumo__lista">
+
+                    </ul>
+
+                    <div class="resumo__entrega">
+                        <p>Previsão de entrega</p>
+                        <p>01/dez/2026 a 07/dez/2026</p>
+                        <p>Entrega padrão</p>
+                    </div>
+                    <p class="resumo__rotulo">Valor final</p>
+                    <p class="resumo__valor" id="resumo-total">R$ 0,00</p>
+                </div>
+
+                <button type="submit" class="confirmar">Confirmar compra</button>
+            </section>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

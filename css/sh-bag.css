@@ -1,0 +1,740 @@
+/* Sacola / checkout – usa variáveis, topo e menu de style.css */
+
+.sacola {
+    --rosa-linha: #b99c94;
+    --cinza-campo: #d9d9d9;
+    --terracota: #bd4b38;
+    --botao: #87665f;
+    --vermelho-radio: #e3141c;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3.4rem 5% 4rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.sacola h2,
+.sacola h3 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.sacola p {
+    margin: 0;
+}
+
+/* ---------- Itens + Total ---------- */
+.carrinho {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 283px);
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 4rem;
+}
+
+.itens h2,
+.total h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.itens h2 {
+    margin-top: 1.9rem;
+}
+
+.itens__lista {
+    list-style: none;
+    margin: 1.1rem 0 0;
+    padding: 0;
+}
+
+.itens__lista li {
+    display: grid;
+    grid-template-columns: 2.4rem 43px 1fr;
+    align-items: center;
+    gap: 0 0.9rem;
+    padding: 0.55rem 0 0.9rem;
+    border-bottom: 1px solid var(--rosa-linha);
+    margin-top: 0.9rem;
+}
+
+.itens__lista li:first-child {
+    margin-top: 0;
+}
+
+.remover {
+    border: 0;
+    background: none;
+    padding: 0.3rem 0.5rem;
+    font: inherit;
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: var(--terracota);
+    cursor: pointer;
+}
+
+.remover:hover {
+    color: var(--vinho);
+}
+
+.remover:focus-visible {
+    outline: 2px solid var(--vinho);
+    outline-offset: 2px;
+}
+
+.itens__lista img,
+.resumo__lista img {
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+    background: var(--bege);
+}
+
+.item-nome {
+    font-size: 0.85rem;
+}
+
+.item-preco {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.total {
+    background: var(--cinza-campo);
+    border-radius: 8px;
+    padding: 1.3rem 1.3rem 1.6rem;
+    text-align: center;
+}
+
+.total__linhas {
+    margin: 1.6rem 0 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.total__linhas div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: left;
+}
+
+.total__linhas dt {
+    font-size: 0.78rem;
+}
+
+.total__linhas dd {
+    margin: 0;
+    font-size: 0.78rem;
+    white-space: nowrap;
+}
+
+.total__rotulo {
+    font-size: 1.05rem;
+    margin-top: 1.5rem;
+}
+
+.total__valor {
+    font-size: 1.7rem;
+    margin-top: 0.35rem;
+    
+}
+
+.total__rotulo--entrega {
+    margin-top: 0.9rem;
+}
+
+.total__datas {
+    font-size: 0.9rem;
+    margin-top: 0.7rem;
+}
+
+#valor_final{
+    margin-top: 20%;
+}
+#valor_final p{
+    margin-bottom: 5%;
+}
+
+/* ---------- Blocos ---------- */
+.bloco {
+    padding-top: 2.8rem;
+    margin-top: 2.2rem;
+    position: relative;
+}
+
+.bloco::before {
+    content: "";
+    display: block;
+    width: min(100%, 393px);
+    height: 2px;
+    background: var(--marrom);
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bloco__titulo {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.bloco__titulo--grande {
+    font-size: 1.5rem;
+}
+
+/* ---------- Endereço ---------- */
+.endereco {
+    margin-top: 2.6rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.55rem 1.1rem;
+}
+
+.campo {
+    display: block;
+}
+
+.campo input,
+.cartao input {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    background: var(--cinza-campo);
+    color: var(--marrom);
+    font: inherit;
+}
+
+.campo input {
+    height: 34px;
+    padding: 0 0.8rem;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+.campo input::placeholder {
+    color: #8c8c8c;
+    opacity: 1;
+}
+
+.campo input:focus,
+.cartao input:focus {
+    outline: 2px solid var(--vinho);
+    outline-offset: 2px;
+}
+
+.c-nome {
+    grid-column: 1 / -1;
+}
+
+.c-cep {
+    grid-column: span 3;
+}
+
+.c-endereco {
+    grid-column: span 9;
+}
+
+.c-numero {
+    grid-column: span 2;
+}
+
+.c-compl {
+    grid-column: span 2;
+}
+
+.c-compl input::placeholder {
+    font-size: 0.9rem;
+}
+
+.c-bairro {
+    grid-column: span 4;
+}
+
+.c-cidade {
+    grid-column: span 4;
+}
+
+.c-email {
+    grid-column: span 7;
+}
+
+.c-tel {
+    grid-column: span 5;
+}
+
+.c-numero input,
+.c-compl input {
+    padding: 0 0.3rem;
+    font-size: 0.95rem;
+}
+
+/* ---------- Pagamento ---------- */
+.metodos {
+    border: 0;
+    margin: 2rem 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 117px);
+    justify-content: center;
+    gap: 1.5rem clamp(1rem, 5vw, 3.2rem);
+}
+
+.metodo {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.metodo input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.metodo label {
+    display: grid;
+    place-items: center;
+    width: 117px;
+    height: 89px;
+    background: var(--cinza-campo);
+    border: 1px solid #6c6c6c;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0.6rem;
+    transition: box-shadow 0.2s;
+}
+
+.metodo label img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.metodo label:hover {
+    box-shadow: 0 0 0 2px var(--bege);
+}
+
+.metodo::after {
+    content: "";
+    grid-row: 2;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--cinza-campo);
+    pointer-events: none;
+    background-clip: padding-box;
+}
+
+.metodo:has(input:checked)::after {
+    background: radial-gradient(circle, var(--vermelho-radio) 0 6px, var(--cinza-campo) 7px);
+}
+
+.metodo:has(input:checked) label {
+    box-shadow: 0 0 0 2px var(--marrom);
+}
+
+.metodo:has(input:focus-visible) label {
+    outline: 2px solid var(--vinho);
+    outline-offset: 3px;
+}
+
+.cartao {
+    margin: 4rem auto 0;
+    max-width: 700px;
+    display: grid;
+    gap: 1.1rem;
+}
+
+.cartao__linha {
+    display: grid;
+    grid-template-columns: 11.2rem minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0 0.7rem;
+}
+
+.cartao label {
+    font-size: 1.1rem;
+}
+
+.cartao label b {
+    font-weight: 400;
+}
+
+.cartao input {
+    height: 41px;
+    padding: 0 0.9rem;
+    font-size: 1rem;
+}
+
+.cartao__linha>input:not(.curto):not(.medio) {
+    grid-column: 2;
+}
+
+.cartao__linha:first-child>input {
+    max-width: 324px;
+}
+
+.bandeira {
+    width: 49px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    background: var(--cinza-campo);
+    border: 1px solid #6c6c6c;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.bandeira img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+.pagamento:has(#pg-mastercard:checked) .bandeira__mastercard,
+.pagamento:has(#pg-visa:checked) .bandeira__visa {
+    display: block;
+}
+
+.cartao__linha--validade {
+    grid-template-columns: 11.2rem 111px 138px auto 76px;
+    gap: 0 1.3rem;
+}
+
+.cartao__linha--validade .curto {
+    width: 100%;
+    text-align: center;
+}
+
+.cartao__linha--validade .medio {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+}
+
+.cartao__linha--validade .medio {
+    border-radius: 8px;
+}
+
+.cvv-rotulo {
+    margin-left: 0.4rem;
+}
+
+.cartao__linha:last-child>input {
+    max-width: 465px;
+}
+
+/* PayPal e Pix não usam os campos do cartão */
+.aviso-metodo {
+    display: none;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.05rem;
+}
+
+.pagamento:has(#pg-paypal:checked) .cartao,
+.pagamento:has(#pg-pix:checked) .cartao {
+    display: none;
+}
+
+.pagamento:has(#pg-paypal:checked) .aviso-metodo--paypal,
+.pagamento:has(#pg-pix:checked) .aviso-metodo--pix {
+    display: block;
+}
+
+/* ---------- Resumo ---------- */
+.resumo__caixa {
+    width: min(100%, 275px);
+    margin: 2.2rem auto 0;
+}
+
+.resumo__caixa h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-left: 0;
+}
+
+.resumo__lista {
+    list-style: none;
+    margin: 0.6rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 1.8rem;
+}
+
+.resumo__lista li {
+    display: grid;
+    grid-template-columns: 63px 1fr;
+    gap: 0.9rem;
+    align-items: start;
+}
+
+.resumo__lista img {
+    width: 63px;
+    height: 63px;
+}
+
+.resumo__lista .item-nome {
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
+
+.resumo__lista .item-preco {
+    font-size: 0.8rem;
+    margin-top: 0.9rem;
+}
+
+.resumo__entrega {
+    margin-top: 1.8rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--marrom);
+    display: grid;
+    gap: 1rem;
+    font-size: 0.95rem;
+}
+
+.resumo__rotulo {
+    font-size: 1.3rem;
+    margin-top: 1.2rem;
+}
+
+.resumo__valor {
+    font-size: 1.3rem;
+    margin-top: 0.9rem;
+}
+
+.confirmar {
+    display: block;
+    width: min(100%, 335px);
+    height: 88px;
+    margin: 1.4rem auto 0;
+    border: 0;
+    border-radius: 22px;
+    background: var(--botao);
+    color: var(--branco);
+    font: inherit;
+    font-size: 1.45rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.confirmar:hover {
+    background: var(--marrom);
+}
+
+.confirmar:active {
+    transform: scale(0.98);
+}
+
+.confirmar:focus-visible {
+    outline: 2px solid var(--vinho);
+    outline-offset: 4px;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+    .sacola {
+        padding-top: 2.6rem;
+    }
+
+    .carrinho {
+        gap: 2rem;
+    }
+
+    .metodos {
+        grid-template-columns: repeat(4, 104px);
+    }
+
+    .metodo label {
+        width: 104px;
+        height: 80px;
+    }
+
+    .cartao__linha--validade {
+        grid-template-columns: 11.2rem 100px 120px auto 70px;
+        gap: 0 1rem;
+    }
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 720px) {
+    .sacola {
+        padding: 1.8rem 1.1rem 3rem;
+    }
+
+    .carrinho {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .itens h2 {
+        margin-top: 0;
+    }
+
+    .total {
+        padding: 1.2rem 1rem 1.4rem;
+    }
+
+    .endereco {
+        gap: 1rem 0.7rem;
+        margin-top: 1.8rem;
+    }
+
+    .c-nome,
+    .c-endereco,
+    .c-bairro,
+    .c-cidade,
+    .c-email,
+    .c-tel {
+        grid-column: 1 / -1;
+    }
+
+    .c-cep {
+        grid-column: 1 / -1;
+    }
+
+    .c-numero,
+    .c-compl {
+        grid-column: span 6;
+    }
+
+    .campo input {
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .metodos {
+        grid-template-columns: repeat(2, 117px);
+        gap: 1.4rem 1.6rem;
+    }
+
+    .metodo label {
+        width: 117px;
+        height: 80px;
+    }
+
+    .cartao {
+        margin-top: 2.4rem;
+        gap: 1.3rem;
+    }
+
+    .cartao__linha,
+    .cartao__linha--validade {
+        grid-template-columns: 1fr auto;
+        gap: 0.4rem 0.7rem;
+    }
+
+    .cartao__linha>label:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .cartao__linha>input:not(.curto):not(.medio) {
+        grid-column: 1;
+        max-width: none;
+    }
+
+    .cartao__linha:first-child .bandeira {
+        grid-column: 2;
+    }
+
+    .cartao__linha--validade {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cartao__linha--validade>label:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .cartao__linha--validade .cvv-rotulo {
+        grid-column: 1 / -1;
+        margin: 0.6rem 0 0;
+    }
+
+    .cartao__linha--validade .curto,
+    .cartao__linha--validade .medio {
+        grid-column: auto;
+    }
+
+    .cartao__linha:last-child>input {
+        max-width: none;
+        grid-column: 1 / -1;
+    }
+
+    .confirmar {
+        height: 70px;
+        font-size: 1.3rem;
+    }
+}
+
+
+/* ---------- Quantidade dos produtos ---------- */
+
+.item-detalhes {
+    min-width: 0;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 0.7rem;
+    font-size: 0.85rem;
+}
+
+.quantidade button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--rosa-linha);
+    background: transparent;
+    color: var(--marrom);
+    cursor: pointer;
+    font: inherit;
+}
+
+.quantidade button:hover {
+    background: var(--cinza-campo);
+}
+
+.quantidade span {
+    min-width: 15px;
+    text-align: center;
+}
+
+/* ---------- Sacola vazia ---------- */
+
+.sacola-vazia,
+.resumo-vazio {
+    list-style: none;
+    padding: 1.5rem 0;
+    text-align: center;
+    justify-self: center;
+    font-size: 2rem;
+    color: var(--marrom);
+    width: 100%;
+}
+
+/* ---------- Botão de finalizar ---------- */
+
+.confirmar:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+

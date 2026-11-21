@@ -1,0 +1,644 @@
+:root {
+  --bege: #d9c7ae;
+  --bege-claro: #cfbf9f;
+  --verde: #5c6b35;
+  --marrom: #5e3a33;
+  --vinho: #7a3b3b;
+  --cinza-busca: #e3e3e3;
+  --branco: #fff;
+  --fonte: "fredoka", "Futura", "Century Gothic", sans-serif;
+}
+
+@font-face {
+  font-family: italiana;
+  src: url(/src/fonts/Italiana-Regular.ttf);
+}
+
+@font-face {
+  font-family: fredoka-cond;
+  src: url(/src/fonts/Fredoka_Condensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: fredoka;
+  src: url(/src/fonts/Fredoka-Regular.ttf);
+}
+
+@font-face {
+  font-family: futura;
+  src: url(/src/fonts/futura-pt-book.otf);
+}
+
+@font-face {
+  font-family: volko-text-thin;
+  src: url(/src/fonts/volkosans-textthin-3-1.otf);
+}
+
+@font-face {
+  font-family: nuby;
+  src: url(/src/fonts/nuby-regular.otf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  font-weight: 400;
+  color: var(--marrom);
+  background: var(--branco);
+  line-height: 1.4;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+.menu-botao:focus-visible {
+  outline: 2px solid var(--vinho);
+  outline-offset: 3px;
+}
+
+/* ---------- Aviso ---------- */
+.aviso {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  background: var(--bege);
+  text-align: center;
+  font-size: clamp(0.85rem, 1.5vw, 1.15rem);
+}
+
+/* ---------- Topo ---------- */
+.topo {
+  background: var(--branco);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  font-family: fredoka;
+}
+
+.topo__barra {
+  max-width: 1367px;
+  margin: 0 auto;
+  padding: 0.5rem 4.5%;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  min-height: 54px;
+  font-family: fredoka;
+}
+
+.logo img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.menu {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+.menu a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.menu a:hover {
+  opacity: 0.7;
+}
+
+/* ---------- Dropdown Shop ---------- */
+
+.menu__dropdown {
+  position: relative;
+}
+
+.menu__dropdown summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu__dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu__dropdown summary svg {
+  transition: transform 0.25s ease;
+}
+
+.menu__dropdown[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.menu__categorias {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  min-width: 165px;
+  padding: 0.7rem 0;
+  background: var(--branco);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+  z-index: 30;
+}
+
+.menu__dropdown:hover .menu__categorias,
+.menu__dropdown:focus-within .menu__categorias,
+.menu__dropdown[open] .menu__categorias {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__categorias a,
+.menu__categorias span {
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.menu__categorias a:hover {
+  background: #f5f0e9;
+  opacity: 1;
+}
+
+.menu__categorias span {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+
+.busca {
+  flex: 1;
+  max-width: 372px;
+  display: flex;
+  align-items: center;
+  background: var(--cinza-busca);
+  border-radius: 999px;
+  padding: 0 0.9rem 0 1.1rem;
+  height: 34px;
+}
+
+.busca input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--marrom);
+}
+
+.busca input:focus {
+  outline: none;
+}
+
+.busca:focus-within {
+  outline: 2px solid var(--vinho);
+  outline-offset: 2px;
+}
+
+.busca button {
+  border: 0;
+  background: none;
+  color: var(--marrom);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.acoes {
+  display: flex;
+  gap: 2.2rem;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.acoes a {
+  display: grid;
+  place-items: center;
+}
+
+.acoes a:first-child {
+  color: var(--vinho);
+}
+
+.acoes a:hover {
+  opacity: 0.7;
+}
+
+/* menu mobile (somente CSS) */
+.menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-botao {
+  display: none;
+  cursor: pointer;
+  width: 28px;
+  height: 20px;
+  position: relative;
+}
+
+.menu-botao span,
+.menu-botao::before,
+.menu-botao::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--marrom);
+  transition: transform 0.25s, opacity 0.25s, top 0.25s;
+}
+
+.menu-botao::before {
+  top: 0;
+}
+
+.menu-botao span {
+  top: 9px;
+}
+
+.menu-botao::after {
+  top: 18px;
+}
+
+.menu-toggle:checked+.menu-botao::before {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.menu-toggle:checked+.menu-botao::after {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.menu-toggle:checked+.menu-botao span {
+  opacity: 0;
+}
+
+.menu-toggle:focus-visible+.menu-botao {
+  outline: 2px solid var(--vinho);
+  outline-offset: 4px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(90deg, var(--verde) 0%, #8d9068 45%, var(--bege-claro) 100%);
+  color: var(--branco);
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  min-height: 327px;
+  padding: 2rem 6% 2rem 6%;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.hero__texto h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: clamp(2.6rem, 6.1vw, 5.4rem);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  font-family: italiana;
+}
+
+.hero__texto p {
+  margin: 1.2rem 0 0 clamp(0rem, 12vw, 8.5rem);
+  font-size: clamp(1.3rem, 2.6vw, 2.1rem);
+margin-left: 15%;
+  font-weight:lighter;
+  line-height: 1.35;
+  text-align: center;
+  width: max-content;
+  font-family: volko-text-thin ;
+}
+
+.botao {
+  display: inline-block;
+  margin: 1.8rem 0 0 clamp(1rem, 14.5vw, 10rem);
+  padding: 0.55rem 0.9rem;
+  border-top: 2px solid var(--branco);
+  border-bottom: 2px solid var(--branco);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, color 0.2s;
+margin-left: 23%;
+}
+
+.botao:hover {
+  background: var(--branco);
+  color: var(--verde);
+}
+
+.botao:focus-visible {
+  outline-color: var(--branco);
+}
+
+.hero__imagem {
+  position: relative;
+  justify-self: center;
+  width: min(224px, 100%);
+  aspect-ratio: 224 / 268;
+  margin-right: 8%;
+}
+
+.hero__imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #b9c9a8;
+}
+
+.selo {
+  position: absolute;
+  width: 65%;
+  left: -14%;
+  top: -14%;
+  fill: var(--branco);
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  animation: girar 28s linear infinite;
+  font-family: fredoka;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- Faixa ---------- */
+.faixa {
+  background: var(--bege);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1.15rem 0;
+}
+
+.faixa__trilho {
+  display: inline-flex;
+  align-items: center;
+  animation: correr 70s linear infinite;
+}
+
+.faixa span {
+  font-size: 1.15rem;
+  padding: 0 2.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.faixa i {
+  font-style: normal;
+  color: var(--vinho);
+  font-size: 1.2rem;
+}
+
+@keyframes correr {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Produtos ---------- */
+.produtos {
+  padding: 2rem 2.7% 3rem;
+  max-width: 1367px;
+  margin: 0 auto;
+}
+
+.grade {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem 1.05rem;
+}
+
+.grade a {
+  display: block;
+  text-align: center;
+}
+
+.grade img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: var(--bege);
+    margin-bottom: 0.25rem;
+}
+
+.grade h2 {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 400;
+  line-height: 1.25;
+  font-family: fredoka;
+}
+
+.grade p {
+  margin: 0.1rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: fredoka;
+}
+
+.grade a:hover h2 {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+  .topo__barra {
+    gap: 1.5rem;
+    padding: 0.5rem 4%;
+  }
+
+  .menu {
+    gap: 1.4rem;
+    font-size: 1rem;
+  }
+
+  .acoes {
+    gap: 1.4rem;
+    margin-right: 0;
+  }
+
+  .busca {
+    max-width: 220px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 0.8fr;
+    padding: 2.5rem 5%;
+  }
+
+  .hero__texto p {
+    margin-left: 2rem;
+  }
+
+  .botao {
+    margin-left: 4rem;
+  }
+
+  .hero__imagem {
+    margin-right: 0;
+    width: min(210px, 80%);
+  }
+
+  .grade {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 1.2rem;
+  }
+
+  .grade h2 {
+    font-size: 1.05rem;
+  }
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 720px) {
+  .topo__barra {
+    flex-wrap: wrap;
+    gap: 0.7rem 1rem;
+    padding: 0.7rem 1rem;
+    position: relative;
+  }
+
+  .menu-botao {
+    display: block;
+    order: 1;
+  }
+
+  .logo {
+    order: 2;
+    margin-right: auto;
+  }
+
+  .acoes {
+    order: 3;
+    gap: 1.1rem;
+  }
+
+  .busca {
+    order: 4;
+    flex: 1 0 100%;
+    max-width: none;
+  }
+
+  .menu {
+    order: 5;
+    flex: 1 0 100%;
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 1.1rem;
+  }
+
+  .menu a {
+    padding: 0.75rem 0.25rem;
+    border-top: 1px solid #eee;
+  }
+
+  .menu-toggle:checked~.menu {
+    max-height: 260px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 2.5rem 1.25rem 3rem;
+    background: linear-gradient(180deg, var(--verde) 0%, #8d9068 55%, var(--bege-claro) 100%);
+    gap: 2.8rem;
+  }
+
+  .hero__texto p,
+  .botao {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero__texto p {
+    width: auto;
+  }
+
+  .hero__imagem {
+    width: 170px;
+  }
+
+  .selo {
+    font-size: 14px;
+  }
+
+  .faixa {
+    padding: 0.9rem 0;
+  }
+
+  .faixa span {
+    font-size: 0.95rem;
+    padding: 0 1.2rem;
+  }
+
+  .produtos {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 0.8rem;
+  }
+
+  .grade h2 {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- Movimento reduzido ---------- */
+@media (prefers-reduced-motion: reduce) {
+
+  .selo,
+  .faixa__trilho {
+    animation: none;
+  }
+
+  .faixa {
+    overflow-x: auto;
+  }
+}
