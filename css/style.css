@@ -9,34 +9,56 @@
   --fonte: "fredoka", "Futura", "Century Gothic", sans-serif;
 }
 
+/* =========================================
+   FANCY HOME — FONTES PERSONALIZADAS
+========================================= */
+
 @font-face {
-  font-family: italiana;
-  src: url(../src/fonts/Italiana-Regular.ttf);
+    font-family: 'italiana';
+    src: url('../src/fonts/Italiana-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: fredoka-cond;
-  src: url(../src/fonts/Fredoka_Condensed-Regular.ttf);
+    font-family: 'fredoka-cond';
+    src: url('../src/fonts/Fredoka_Condensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: fredoka;
-  src: url(../src/fonts/Fredoka-Regular.ttf);
+    font-family: 'fredoka';
+    src: url('../src/fonts/Fredoka-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: futura;
-  src: url(../src/fonts/futura-pt-book.otf);
+    font-family: 'futura';
+    src: url('../src/fonts/futura-pt-book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: volko-text-thin;
-  src: url(../src/fonts/volkosans-textthin-3-1.otf);
+    font-family: 'volko-text-thin';
+    src: url('../src/fonts/volkosans-textthin-3-1.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: nuby;
-  src: url(../src/fonts/nuby-regular.otf);
+    font-family: 'nuby';
+    src: url('../src/fonts/nuby-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 *,
