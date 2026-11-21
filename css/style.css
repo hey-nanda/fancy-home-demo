@@ -11,32 +11,32 @@
 
 @font-face {
   font-family: italiana;
-  src: url(./src/fonts/Italiana-Regular.ttf);
+  src: url(../src/fonts/Italiana-Regular.ttf);
 }
 
 @font-face {
   font-family: fredoka-cond;
-  src: url(./src/fonts/Fredoka_Condensed-Regular.ttf);
+  src: url(../src/fonts/Fredoka_Condensed-Regular.ttf);
 }
 
 @font-face {
   font-family: fredoka;
-  src: url(./src/fonts/Fredoka-Regular.ttf);
+  src: url(../src/fonts/Fredoka-Regular.ttf);
 }
 
 @font-face {
   font-family: futura;
-  src: url(./src/fonts/futura-pt-book.otf);
+  src: url(../src/fonts/futura-pt-book.otf);
 }
 
 @font-face {
   font-family: volko-text-thin;
-  src: url(./src/fonts/volkosans-textthin-3-1.otf);
+  src: url(../src/fonts/volkosans-textthin-3-1.otf);
 }
 
 @font-face {
   font-family: nuby;
-  src: url(./src/fonts/nuby-regular.otf);
+  src: url(../src/fonts/nuby-regular.otf);
 }
 
 *,
