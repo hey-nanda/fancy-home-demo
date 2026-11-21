@@ -215,7 +215,7 @@ function imageUrl(src) {
                 <div class="wishlist__vazia">
                     <p>Sua wishlist está vazia.</p>
                     <span>Explore nossa coleção e encontre seus favoritos!</span>
-                    <a href="./shop.html" class="btn">
+                    <a href="/shop.html" class="btn">
                         Explorar produtos
                     </a>
                 </div>

@@ -51,7 +51,7 @@
         })[char]);
     }
 
-    // Corrige imagens para funcionar em /demo/
+    // Corrige imagens para funcionar em /
     // e também na Vercel.
 
     function imageUrl(src) {
@@ -207,7 +207,7 @@
             bagList.innerHTML = `
                 <li class="sacola-vazia">
                     <p>Sua sacola está vazia.</p>
-                    <a href="./shop.html">
+                    <a href="/shop.html">
                         Explorar produtos
                     </a>
                 </li>

@@ -34,10 +34,10 @@
 
     // ---------- Caminhos da demonstração ----------
 
-    // Funciona tanto em /demo/ no Live Server quanto
+    // Funciona tanto em / no Live Server quanto
     // na raiz do site publicado na Vercel.
     const pageUrl = id =>
-        `/demo/product-details.html?id=${encodeURIComponent(id)}`;
+        `/product-details.html?id=${encodeURIComponent(id)}`;
 
     function imageUrl(src) {
         if (!src) return "";

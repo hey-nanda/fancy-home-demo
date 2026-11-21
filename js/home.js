@@ -31,7 +31,7 @@
         featuredProducts.forEach(product => {
             const item = document.createElement('li');
             const link = document.createElement('a');
-            link.href = `./product-details.html?id=${encodeURIComponent(product.id)}`;
+            link.href = `/product-details.html?id=${encodeURIComponent(product.id)}`;
 
             const image = document.createElement('img');
             image.src = product.image;
